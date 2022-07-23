@@ -1,0 +1,1 @@
+var width=screen.width,height=screen.height;_iOSDevice=!!navigator.platform.match(/iPhone|iPod|iPad/),width>1e3&&height>700?window.location="index_website.php":1==_iOSDevice?setTimeout(function(){document.location.href="index_ponsel.php"},250):window.location="index_ponsel.php";

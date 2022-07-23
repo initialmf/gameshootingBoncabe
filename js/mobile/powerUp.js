@@ -1,0 +1,1 @@
+var PowerUp=function(t,i,s,h){this.xPosition=t,this.yPosition=i,this.type=s,this.assetsManager=h,this.width=34,this.height=33,this.isPickedUp=!1};PowerUp.prototype.update=function(){},PowerUp.prototype.draw=function(t){t.drawImage(this.assetsManager.images[this.type],this.xPosition,this.yPosition,this.width,this.height)};

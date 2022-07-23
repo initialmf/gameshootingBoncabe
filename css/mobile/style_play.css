@@ -1,0 +1,227 @@
+/**
+ * Developed by Michal Goly on the 20/04/2016
+ */
+
+@font-face {
+    font-family: "kenvector_future_thin";
+    src: url("../assets/Bonus/kenvector_future_thin.ttf");
+
+    /*width: 950px;*/
+    /*height: 1200px;*/
+}
+
+body {
+    /*background: url("../assets/Backgrounds/black.png") repeat;*/
+    overscroll-behavior: none;
+    touch-action: none;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    background-color: black;
+}
+
+.logo{width: 400px;height: 300px;align-self: center;}
+.tombol_kanan{background-color: transparent;color: transparent; border-color: transparent;}
+.tombol_kiri{background-color: transparent;color: transparent; border-color: transparent;}
+
+.browser1{
+  display: inline-block;
+  position: relative;
+  width: 320px !important;
+  height: 480px !important;
+  background: #efefef;
+ }
+
+
+#wrapper {
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: 5px solid transparent;
+}
+
+#menu-page, #high-scores-page, #about-page, #canvas, #game-over-box {
+    position: absolute;
+    background: url("../assets/Backgrounds/blue.png") repeat;
+    color: transparent;
+    width: 650px;
+    height: 500px;
+    text-align: center;
+    font-family: "kenvector_future_thin", serif;
+}
+
+/*@media screen and (min-width:980px) {*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.75) {
+    .logo{width: 500px;height: 300px;align-self: center;}
+    .tombol_kanan{border-color: white;border-width: 9px;height: 240px;width: 450px;font-size:370px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;right: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .tombol_kiri{border-color: white;border-width: 9px;height: 240px;width: 450px;font-size:370px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;left: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .judul_kanan{color:white;font-size: 50px;}
+    .judul_kiri{color:white;font-size: 50px;}
+    #wrapper {
+        width: 900px;
+        height: 1120px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border: 5px solid transparent;
+    }
+
+    #menu-page, #high-scores-page, #about-page, #canvas, #game-over-box {
+        position: absolute;
+        background: url("../assets/Backgrounds/blue.png") repeat;
+        color: transparent;
+        width: 900px;
+        height: 1120px;
+        text-align: center;
+        font-family: "kenvector_future_thin", serif;
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+    .logo{width: 400px;height: 300px;align-self: center;}
+    .tombol_kanan{border-color: white;border-width: 9px;height: 240px;width: 450px;font-size:370px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;right: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .tombol_kiri{border-color: white;border-width: 9px;height: 240px;width: 450px;font-size:370px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;left: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .judul_kanan{color:white;font-size: 50px;}
+    .judul_kiri{color:white;font-size: 50px;}
+    #wrapper {
+        width: 900px;
+        height: 870px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border: 5px solid transparent;
+    }
+
+    #menu-page, #high-scores-page, #about-page, #canvas, #game-over-box {
+        position: absolute;
+        background: url("../assets/Backgrounds/blue.png") repeat;
+        color: transparent;
+        width: 900px;
+        height: 870px;
+        text-align: center;
+        font-family: "kenvector_future_thin", serif;
+    }
+
+}
+
+@supports (-webkit-touch-callout: none) {
+    .logo{width: 500px;height: 300px;align-self: center;}
+    .tombol_kanan{border-color: white;border-width: 9px;height: 170px;width: 170px;font-size:170px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;right: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .tombol_kiri{border-color: white;border-width: 9px;height: 170px;width: 170px;font-size:170px;background-color: black;color: white;border-radius: 70px;position: absolute;bottom: 0;left: 0;padding-bottom: 25px; margin-bottom: 25px;}
+    .judul_kanan{color:white;font-size: 38px;}
+    .judul_kiri{color:white;font-size: 38px;}
+    #wrapper {
+        width: 950px;
+        height: 900px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border: 5px solid transparent;
+    }
+
+    #menu-page, #high-scores-page, #about-page, #canvas, #game-over-box {
+        position: absolute;
+        background: url("../assets/Backgrounds/blue.png") repeat;
+        color: transparent;
+        width: 950px;
+        height: 900px;
+        text-align: center;
+        font-family: "kenvector_future_thin", serif;
+    }
+
+}
+
+h1 {
+    font-size: 3.8em;
+}
+h5 {
+    font-size: 3.8em;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2em;
+}
+
+#about-page li, #about-page p {
+    margin: 5px;
+}
+
+#about-page ul {
+    margin: 0;
+}
+
+#credits-h2 {
+    margin-bottom: 17px;
+}
+
+.about-li {
+    padding-top: 2px;
+    font-size: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+a:visited {
+    color: transparent;
+}
+
+a:hover {
+    color: transparent;
+}
+
+.light-grey {
+    color: transparent;
+}
+
+.about-li a {
+    color: transparent;
+}
+
+.back-button {
+    font-size: 1.3em;
+}
+
+#exit-button {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    padding: 12px 22px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#name-field {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3em;
+}
+
+#game-over-p {
+    font-size: 1.3em;
+}

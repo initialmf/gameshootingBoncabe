@@ -1,0 +1,367 @@
+*{padding:0;margin:0;box-sizing:border-box;xfont-family:VT323,monospace}
+/*body{Xheight:100vh;background-image:url(https://kbu-cdn.com/bc/wp-content/uploads/makaroni-pattern.png);background-repeat:repeat}*/
+body{background-image:url(https://kbu-cdn.com/bc/wp-content/uploads/makaroni-pattern.png);}
+/*body{background-image: url('bg-makaroni-pattern.png');}*/
+/*body {*/
+/*  background-color: #E6E6FA;*/
+/*}*/
+ol li{padding:0;margin-left:5px}
+.open{width:100%;display:block;justify-content:center;align-items:center;margin-top:100px}
+.mainTag{color:#daa520;font-weight:bolder}
+.welcome{color:#fff;font-weight:800;width:70%;margin:auto;margin-bottom:20px}
+.btn-handle{border:2px solid #2580b3;color:#fff}
+.btn-handle:hover{background:linear-gradient(115.87deg,#14f1d9 0%,#3672f8 100%)}
+.headTag,.points > p{color:#c5c5c5;font-weight:bolder}
+#point{font-weight:1300}
+/*--------------------------------------------*/
+/*MEMORY CARD GAMES*/
+/*--------------------------------------------*/
+.memory-game{perspective:1000px;width:calc(25% - 10px);height:calc(33.333% - 10px);margin:auto;display:flex;flex-wrap:wrap}
+.memory-game .memory-card.flip {-webkit-transform: rotateY(-180deg);transform: rotateY(-180deg);}
+.memory-game .memory-card{width:calc(25% - 10px);height:calc(33% - 10px);margin:5px;position:relative;-webkit-border-radius:5px;border-radius:5px;border:10px solid #daa520;-webkit-transform-style:preserve-3d;-webkit-transition:.5s;transform-style:preserve-3d;transition:.5s}
+.memory-game .memory-card .side{width:100%;height:auto;cursor:pointer;position:absolute;box-sizing:border-box;color:#fff;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;top:0;left:0}
+.memory-game .memory-card .front-face{z-index:2;-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg)}
+.memory-game .memory-card .back-face{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}
+/*--------------------------------------------*/
+/*MEMORY CARD GAMES*/
+/*--------------------------------------------*/
+#won{visibility:hidden;border-radius:10px;background:#ffd700;background-image:linear-gradient(to bottom,#76c3f0 0%,#2580b3 100%);margin:auto;position:absolute;top:50%;left:50%;margin-right:-50%;transform:translate(-50%,-50%);z-index:1;border:5px solid #ffd700}
+#won > h1,#won p{font-weight:bolder}
+#playAgain{border:2px solid #2580b3;border-radius:5px;background:#2580b3}
+#playAgain:hover{border:2px solid #064d75;background:linear-gradient(115.87deg,#14f1d9 0%,#3672f8 100%)}
+#share{border:2px solid #2580b3;border-radius:5px;background:#ffd700}
+#share:hover{border:2px solid #064d75;background:linear-gradient(115.87deg,#14f1d9 0%,#ffd700 100%)}
+@media (min-width: 992px) {
+.mainTag{font-size:80px;margin-top:60px}
+.welcome{font-size:35px}
+.btn-handle{font-size:40px;padding:10px 20px;border-radius:10px}
+.memory-game{width:580px;height:437px}
+#won{padding:50px}
+.headTag{font-size:70px}
+.points > p,#won > h1,#won p,#playAgain{font-size:35px}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.mainTag{font-size:75px;margin-top:60px}
+.welcome{font-size:30px}
+.btn-handle{font-size:35px;padding:10px 20px;border-radius:10px}
+.memory-game{width:580px;height:437px}
+X.front-face,X.back-face{padding:10px}
+#won{padding:50px;top:40%}
+.headTag{font-size:70px}
+.points > p,#won > h1,#won p,#playAgain{font-size:35px}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+.mainTag{font-size:60px;margin-top:50px}
+.welcome{font-size:25px}
+.btn-handle{font-size:30px;padding:10px 20px;border-radius:10px}
+.memory-game{width:480px;height:362px}
+.memory-game .memory-card {border:8px solid #daa520}
+.flipCard{width:480px;height:362px}
+X.front-face,X.back-face{padding:6px}
+#won{padding:35px;top:30%}
+.headTag{font-size:50px}
+.points > p,#won > h1,#won p,#playAgain{font-size:30px}
+}
+@media (min-width: 378px) and (max-width: 575px) {
+.mainTag{font-size:45px;margin-top:45px}
+.welcome{font-size:25px}
+.btn-handle{font-size:30px;padding:10px 20px;border-radius:10px}
+.memory-game{width:380px;height:287px}
+.memory-game .memory-card{border:6px solid #daa520}
+.flipCard{width:380px;height:287px}
+X.front-face,X.back-face{padding:6px}
+#won{padding:30px;top:30%}
+.headTag{font-size:45px}
+.points > p,#won > h1,#won p,#playAgain{font-size:25px}
+}
+@media (max-width: 377px) {
+.mainTag{font-size:45px;margin-top:40px}
+.welcome{font-size:20px}
+.btn-handle{font-size:30px;padding:10px 20px;border-radius:10px}
+.memory-game{width:340px;height:257px}
+.memory-game .memory-card{border:6px solid #daa520}
+.flipCard{width:340px;height:257px}
+X.front-face,X.back-face{padding:5px}
+#won{padding:15px;top:30%}
+.headTag{font-size:40px}
+.points > p,#won > h1,#won p,#playAgain{font-size:25px}
+}
+#share-sossial-buttons img{width:35px;padding:5px;border:0;box-shadow:0;display:inline}
+/********J********/
+/*body {background-color: rgba(0, 0, 0, 0.68);}*/
+header {margin: 0 0 18px;position: relative}
+#layout{position:relative;max-width:1024px;height:275px;margin:0 auto; padding-top: 16px;}
+img.boncabelogo{margin-left:36px}
+img.boncabelogoalt{margin-left:36px}
+.social{position:absolute;top:5px;right:33px;margin-top: 16px;}
+.menu-mobile{position:absolute;top:12px;right:27px;}
+/*batas*/
+.menu-judul{position:absolute;top:12px;right:580px;}
+.logo-macaroni{height: 40px;width: 130px}
+.socicons{padding:25px;position: relative;z-index: 1;}
+/*.socicons{padding:25px;position: relative;z-index: 0;}*/
+/*.socicons{padding:25px;}*/
+.mobile-menu-kobe{display:none;cursor:pointer;top:0;position:absolute;right:0;bottom:5px}
+.overlay{height:100%;width:0;position:fixed;z-index:100;left:0;top:0;background-color:#28469c;background-color:rgba(58,35,12,0.95);overflow-x:hidden;transition:.5s}
+div.mobile-nav{height:30%;width:100%;display:inline-block}
+.overlay-content{top:25%;width:70%;text-align:center}
+.overlay ul{list-style-type:none;list-style-image:none}
+.overlay a{padding:8px;text-decoration:none;font-size:3.6rem;color:#fff;display:block;transition:.3s;line-height:1.5em;cursor:pointer}
+.overlay .closebtn{position:absolute;top:20px;right:45px;font-size:6rem}
+div.line{width:26px;height:3px;background-color:transparent;margin:6px 0}
+/*#main-nav{position:absolute;right:0;top: 105px}*/
+/*#menu-web{top: 105px}*/
+#main-nav{position:absolute;right:0;top: 75px}
+#main-nav ul{margin:0;padding:0}
+#main-nav li{display:block;float:left;margin:0;padding:0;position:relative}
+#main-nav li a{display:block;font-weight:700;font-size:1.3rem;margin:0 1px;padding:4px 7px;background:transparent;margin-bottom:0;text-shadow:4px 3px 5px rgba(76,76,76,.76)}
+#main-nav li li a{color:#000;font-size:12px;width:220px;line-height:35px;border-bottom:1px solid #734600;position:relative;background:#f0c684;font-weight:700;margin:0;padding:0 10px;text-shadow:none}
+#main-nav li li a:hover{background:#d1ba97;color:#000;display:block;opacity:0}
+#main-nav .current-menu-item,#main-nav .current_page_item,#main-nav li a:hover{border-bottom:2px solid #fff;border-radius:5px}
+#main-nav li li a:hover{border:none;border-radius:0}
+#main-nav ul ul li.current-menu-item{border:none;border-radius:0}
+li.current-menu-item li,li.current_page_item li{border:none;border-radius:0}
+#main-nav .current-menu-item:hover{border-bottom:none}
+#main-nav ul ul{display:none;position:absolute;top:28px}
+#main-nav ul ul li{float:none;z-index:999;width:100%}
+#main-nav ul li:hover > ul{display:block}
+#main-nav li.parent-link > a:after{content:' \25be'}
+#main-nav li.is-menu a:active{position:static}
+.nav{float:right;margin-right:18px;height:20px}
+.nav ul{margin:0;padding:0;list-style-type:none;list-style-image:none;line-height:20px;display:table}
+.nav li{display:inline;display:table-cell}
+.nav a{color:#FFF;font-weight:700;text-decoration:none;font-size:1.3rem;padding:11px 20px;background:transparent;margin-bottom:0;cursor:pointer}
+.nav a:hover{color:#fff;outline:0;opacity:0}
+.nav a:not([href]):not([class]) {color: #fff;}
+.container {display: block;padding: 1; margin-top: 21px; padding-top: 21px}
+#site {display: block}
+footer {margin: 50px}
+.btn {margin-top: 18px}
+.point {text-decoration: underline; font-weight: bold}
+.trpoint {padding: 8px;display: block;}
+.trpoint img {margin-right: 8px}
+.hdown header {margin-bottom: 36px}
+@media screen and (min-width:769px) and (max-width:959px) {
+.overlay a {font-size: 17px;line-height: 30px}
+}
+@media (min-width:769px) {
+#main-nav li a{font-size:16px}
+.overlay {display: none}
+}
+@media (max-width:768px) {
+.mobile-menu-kobe{position:absolute;display:block;color:#333;cursor:pointer;right:16px;font-size:2rem;height:26px;top:213px;top:1%}
+img.boncabelogo{margin-left:18px;}
+.social{right:35px;bottom: 1;top: 85px;}
+.menu-judul{top:auto;bottom:1;right:265px;height: 15px;opacity:0}
+.logo-macaroni{height: 40px;width: 110px;}
+.menu-mobile{top:auto;bottom:1}
+div.line{width:26px;height:3px;background-color:#fff;margin:6px 0}
+.logo-boncabe{top:auto;bottom:1;margin-left:18px;width: 180px;height: 118px;}
+.overlay {-ms-overflow-style: none}
+.overlay ul {padding-left: 0}
+.overlay ul li {border: none;padding-left: 15px}
+.overlay ul li ul li {border-style: none}
+.overlay ul li ul li:last-child {border-style: none}
+.overlay a {text-align: left; padding: 2px; text-transform: uppercase; font-size: 17px;line-height: 30px}
+.overlay .closebtn{font-size:4rem;top:1%;right:16px}
+.overlay .parent-link,.overlay .single-link{margin-top:36px}
+.overlay .astm-search-menu{margin-top:36px}
+.mobile-nav li a:hover{font-weight:700;opacity:0}
+#main-nav{display:none}
+.highlight-menu a{color:#ffd696}
+}
+@media screen and (max-width:567px) {
+img.boncabelogo{width:100px;height:50px}
+}
+@media screen and (max-width:430px) {
+img.boncabelogo{width:100px;height:50px}
+.socicons{width:28px;height:auto}
+}
+@media screen and (max-width:390px) {
+.mobile-menu-kobe{right:80px;height:40px}
+}
+@media screen and (max-width:320px) {
+img.boncabelogo{width:80px;height:40px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	margin: auto;
+	vertical-align: middle;
+	font-weight: bold;
+
+	overscroll-behavior: none;
+	overscroll-behavior-y: none;
+	overscroll-behavior-x: none;
+	
+}
+
+img {
+	position: absolute;
+}
+
+.btn {
+	margin: 5px;
+	border: 1px solid #666666;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.btn:hover {
+	background-color: #8c8c8c;
+}
+
+.arrow {
+	margin: 0;
+	color: white;
+}
+
+.arrow:disabled {
+	background-color: grey;
+}
+
+.arrow:enabled {
+	background-color: #4889f0;
+}
+
+#mainColumn, #lastColumn {
+	margin: auto;
+	padding: 10px;
+}
+
+
+
+#firstColumn {
+	z-index: 3;
+	margin: auto;
+	padding: 10px;
+	margin-bottom: 100;
+	padding-bottom: 100;
+}
+
+@-moz-document url-prefix() {
+    #firstColumn {
+    	z-index: 3;
+    	margin: auto;
+    	top: 22px;
+    	padding: 22px;
+    	/*padding: 10px;*/
+    	margin-bottom: 100;
+    	padding-bottom: 100;
+    }
+}
+
+
+#gameTitle {
+	font-weight: bold;
+	color: red;
+}
+
+#gameBoard {
+	z-index: -25;
+	margin: auto;
+	width: 320px;
+	height: 320px;
+	table-layout: auto;
+	position: relative;
+	overflow:hidden;
+	
+	/*overflow: scroll;*/
+}
+
+#moveInput {
+	width: 875px;
+}
+
+#moveInput:hover, #moveInput:focus {
+	box-shadow: 0 0 5px blue;
+}
+
+#arrowContainer {
+	margin: 80px auto;
+}
+
+
+
+#canvas {
+	
+	
+	position: absolute;
+	left: calc(50% - 160px);
+	right: calc(50% - 160px);
+	top: calc(50% - 140px);
+	bottom: calc(50% - 160px);
+	/*opacity: 0.7;*/
+}
+
+#scoreLabel {
+	background-color: lightgrey;
+	width: 10em;
+}
+
+#cover {
+	z-index: 9;
+	position: absolute;
+	background-color: white;
+	width: 320px;
+	height: 320px;
+}
+
+#newGame, #showMove {
+	width: 10em;
+}
+
+#DEBUG {
+	z-index: 100;
+	position: fixed;
+	top: 50px;
+	left: 25px;
+	background-color: #ff4d4d;
+	opacity: 0.85;
+}

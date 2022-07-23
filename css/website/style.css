@@ -1,0 +1,30 @@
+/**
+ * Developed by Michal Goly on the 20/04/2016
+ */
+
+ .logo{width:400px;height:300px;align-self:center}
+ .tombol_kanan{background-color:transparent;color:transparent;border-color:transparent}
+ .tombol_kiri{background-color:transparent;color:transparent;border-color:transparent}
+ #wrapper{margin-top:109px;position:absolute;color:#fff;width:530px;height:280px;background: #000; border:5px solid transparent}
+ #canvas{position:absolute;background:#000;color:#fff;width:760px;height:420px;border:10px solid #DAA520}
+ #menu-page,#high-scores-page,#about-page,#game-over-box{background:#000;color:#fff;width:990px;height:400px;text-align:center;margin:auto;padding-top:36px}
+ #menu-page a {font-family: "Times New Roman", Georgia, Times, Garamond, serif;font-weight: bold;font-size: 41px}
+ #menu-page a:hover{text-decoration:underline}
+ #menu-page li {padding-top:36px}
+ #menu-page li:first-child {padding-top:61px}
+ h1{font-size:3.8em}
+ h5{font-size:3.8em;color:#fff}
+ ul{list-style:none;padding:0;font-size:2em}
+ #about-page li,#about-page p{margin:5px}
+ #about-page ul{margin:0}
+ #credits-h2{margin-bottom:17px}
+ .about-li{padding-top:2px;font-size:.5em}
+ a{text-decoration:none;color:#fff}
+ a:visited{color:#fff}
+ a:hover{color:#FFF}
+ .light-grey{color:#FFF}
+ .about-li a{color:#FFF}
+ .back-button{font-size:1.3em}
+ #exit-button{background-color:#fff;color:#FFF;border:none;padding:12px 22px;font-size:1.3em;font-weight:700}
+ #name-field{padding-top:10px;padding-bottom:10px;font-size:1.3em}
+ #game-over-p{font-size:1.3em}

@@ -1,0 +1,25 @@
+/**
+ * Developed by Michal Goly on the 20/04/2016
+ */
+
+ #menu-page{padding-top:145px;color:#fff;width:300px;height:400px;text-align:center;margin:auto}
+ #menu-page li {font-weight: bold;font-size: 25px}
+ #menu-page li.lisco {margin-top: 10px}
+ .mgamemenu{background:#000}
+ img.gametitle{position:relative;margin-bottom:36px}
+ h1{font-size:3.8em}
+ h5{font-size:3.8em;color:#fff}
+ ul{list-style:none;padding:0;font-size:2em}
+ #about-page li,#about-page p{margin:5px}
+ #about-page ul{margin:0}
+ #credits-h2{margin-bottom:17px}
+ .about-li{padding-top:2px;font-size:.5em}
+ a{text-decoration:none;color:#fff}
+ a:visited{color:#fff}
+ a:hover{color:#FFF}
+ .light-grey{color:#FFF}
+ .about-li a{color:#FFF}
+ .back-button{font-size:1.3em}
+ #exit-button{background-color:#fff;color:#FFF;border:none;padding:12px 22px;font-size:1.3em;font-weight:700}
+ #name-field{padding-top:10px;padding-bottom:10px;font-size:1.3em}
+ #game-over-p{font-size:1.3em}
